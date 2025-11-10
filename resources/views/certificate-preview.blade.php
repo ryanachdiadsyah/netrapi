@@ -32,7 +32,7 @@
 <body>
     <div class="container text-center mt-4">
         <div id="certificate"
-            style="background-image: url('{{ asset($event->certificate_background) }}')">
+            style="background-image: url('{{ asset('assets/certificates/' . $event->certificate_background) }}')">
             @php
                 $design         = json_decode($event->certificate_design_options, true);
                 $namePos        = $design['name_position'] ?? ['x' => 640, 'y' => 455];
